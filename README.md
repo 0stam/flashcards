@@ -10,4 +10,4 @@ For more information run program with `-h` argument.
 ### Features
 Besides basic functionality following features are also supported:
 * reversing hidden and shown phrases,
-* setting custom separator (spaces in custom separators aren't supported yet).
+* setting custom separator.
