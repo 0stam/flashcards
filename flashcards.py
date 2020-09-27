@@ -3,7 +3,7 @@ import sys
 import random
 
 # Argparse initialization
-parser = argparse.ArgumentParser(description='Digital flashcards software.', epilog='File should contain two phrases separated by separator (default is '; ').')
+parser = argparse.ArgumentParser(description='Digital flashcards software.', epilog='File should contain two phrases separated by separator (default is "; ").')
 parser.add_argument('-v', '--version', action='version', version='Flashcards 0.1')
 parser.add_argument('-s', '--separator', default='; ', help='sets separator beetween showed and hidden word versions, e.g. '. '')
 parser.add_argument('-r', '--reverse', action='store_true', help='reverses displayed and hidden names')
@@ -47,7 +47,7 @@ try:
                     print('Good answer.')
                     flashcards.pop(i)
                 else:
-                    print('Wrong. Correct answer is:', flashcards[i][hidden])
+                    print('Wrong. The correct answer is:', flashcards[i][hidden])
                     print('                          ', end='')  # Printing indentation for error pointer
                     for j in range(len(answer) if len(answer) > len(flashcards[i][hidden]) else len(flashcards[i][hidden])):  # For every character in answer
                         if j >= len(answer) or j >= len(flashcards[i][hidden]) or answer[j] != flashcards[i][hidden][j]:  # Checking if this is place of error
