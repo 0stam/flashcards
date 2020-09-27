@@ -35,7 +35,10 @@ try:
                     flashcards.pop()
 
         # Main Loop
+        iteration = 0
         while len(flashcards) > 0:
+            iteration += 1
+            print("Round ", iteration, ":", sep="")
             random.shuffle(flashcards)
             i = 0
             while i < len(flashcards):
