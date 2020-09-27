@@ -48,7 +48,7 @@ try:
                     flashcards.pop(i)
                 else:
                     print('Wrong. The correct answer is:', flashcards[i][hidden])
-                    print('                          ', end='')  # Printing indentation for error pointer
+                    print('                              ', end='')  # Printing indentation for error pointer
                     for j in range(len(answer) if len(answer) > len(flashcards[i][hidden]) else len(flashcards[i][hidden])):  # For every character in answer
                         if j >= len(answer) or j >= len(flashcards[i][hidden]) or answer[j] != flashcards[i][hidden][j]:  # Checking if this is place of error
                             print('^')  # Printing error pointer
