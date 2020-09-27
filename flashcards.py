@@ -5,7 +5,7 @@ import random
 # Argparse initialization
 parser = argparse.ArgumentParser(description='Digital flashcards software.', epilog='File should contain two phrases separated by separator (default is "; ").')
 parser.add_argument('-v', '--version', action='version', version='Flashcards 0.1')
-parser.add_argument('-s', '--separator', default='; ', help='sets separator beetween showed and hidden word versions, e.g. '. '')
+parser.add_argument('-s', '--separator', default='; ', help='sets separator beetween showed and hidden word versions, e.g. ". "')
 parser.add_argument('-r', '--reverse', action='store_true', help='reverses displayed and hidden names')
 parser.add_argument('file_name', help='name of file containing flashcards data')
 
