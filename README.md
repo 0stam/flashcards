@@ -1,5 +1,6 @@
 # Flashcards
 Flashcards softwer made to support learning.
+
 Version: 0.1
 ### Usage
 Create plain text file and write one pair of e.g. translations in one row separated by "; ".
