@@ -1,7 +1,7 @@
 # Flashcards
 Flashcards softwer made to support learning.
 
-Version: 0.1
+Version: 0.2
 ### Usage
 Create plain text file and write one pair of e.g. translations in one row separated by "; ".
 You can then run `python flashcards.py filename` to start test.
